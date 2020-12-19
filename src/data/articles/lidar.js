@@ -24,87 +24,91 @@ const article = {
                     <img className="smallImage" src={images.lidar.rplidar} alt="rplidar" />
                     <p>Pour le modèle A1M8 du RPLIDAR seulement:</p>
                     <table>
-                        <tr>
-                            <th>Item</th>
-                            <th>Unit</th>
-                            <th>Min</th>
-                            <th>Typical</th>
-                            <th>Max</th>
-                            <th>Comments</th>
-                        </tr>
-                        <tr>
-                            <td>Distance range</td>
-                            <td>Meter(m)</td>
-                            <td>TBD</td>
-                            <td>
-                                <tr>A1M8-R4 and the belowing models(0.15 - 6)</tr>
-                                <tr>A1M8-R5 (0.15 - 12)</tr>
-                            </td>
-                            <td>TBD</td>
-                            <td>White objects</td>
-                        </tr>
-                        <tr>
-                            <td>Angular range</td>
-                            <td>Degree</td>
-                            <td>n/a</td>
-                            <td>0-360</td>
-                            <td>n/a</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Scan Field Flatness</td>
-                            <td>Degree</td>
-                            <td>-1.5</td>
-                            <td> </td>
-                            <td>1.5</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Distance resolution</td>
-                            <td>mm</td>
-                            <td>n/a</td>
-                            <td>
-                                <tr>`{'<'}`0.5</tr>
-                                <tr>`{'<'}`1% of the distance</tr>
-                            </td>
-                            <td>n/a</td>
-                            <td>
-                                <tr>`{'<'}`1.5 meters</tr>
-                                <tr>All distance range</tr>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Angular resolution</td>
-                            <td>Degree</td>
-                            <td>n/a</td>
-                            <td>`{'<'}`1</td>
-                            <td>n/a</td>
-                            <td>5.5Hz scan rate</td>
-                        </tr>
-                        <tr>
-                            <td>Sample Duration</td>
-                            <td>Milliseconds(ms)</td>
-                            <td>n/a</td>
-                            <td>0.125</td>
-                            <td>n/a</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Sample Frequency</td>
-                            <td>Hz</td>
-                            <td>n/a</td>
-                            <td>`{'>='}`8000</td>
-                            <td>8010</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Scan rate</td>
-                            <td>Hz</td>
-                            <td>1</td>
-                            <td>5.5</td>
-                            <td>10</td>
-                            <td>Typical value is measured when RPLIDAR A1 takes 360 samples per scan</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Unit</th>
+                                <th>Min</th>
+                                <th>Typical</th>
+                                <th>Max</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                       <tbody>
+                            <tr>
+                                <td>Distance range</td>
+                                <td>Meter(m)</td>
+                                <td>TBD</td>
+                                <td>
+                                    A1M8-R4 and the belowing models(0.15 - 6)<br/>
+                                    A1M8-R5 (0.15 - 12)
+                                </td>
+                                <td>TBD</td>
+                                <td>White objects</td>
+                            </tr>
+                            <tr>
+                                <td>Angular range</td>
+                                <td>Degree</td>
+                                <td>n/a</td>
+                                <td>0-360</td>
+                                <td>n/a</td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Scan Field Flatness</td>
+                                <td>Degree</td>
+                                <td>-1.5</td>
+                                <td> </td>
+                                <td>1.5</td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Distance resolution</td>
+                                <td>mm</td>
+                                <td>n/a</td>
+                                <td>
+                                    `{'<'}`0.5<br/>
+                                   `{'<'}`1% of the distance
+                                </td>
+                                <td>n/a</td>
+                                <td>
+                                    `{'<'}`1.5 meters<br/>
+                                    All distance range
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Angular resolution</td>
+                                <td>Degree</td>
+                                <td>n/a</td>
+                                <td>`{'<'}`1</td>
+                                <td>n/a</td>
+                                <td>5.5Hz scan rate</td>
+                            </tr>
+                            <tr>
+                                <td>Sample Duration</td>
+                                <td>Milliseconds(ms)</td>
+                                <td>n/a</td>
+                                <td>0.125</td>
+                                <td>n/a</td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Sample Frequency</td>
+                                <td>Hz</td>
+                                <td>n/a</td>
+                                <td>`{'>='}`8000</td>
+                                <td>8010</td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Scan rate</td>
+                                <td>Hz</td>
+                                <td>1</td>
+                                <td>5.5</td>
+                                <td>10</td>
+                                <td>Typical value is measured when RPLIDAR A1 takes 360 samples per scan</td>
+                            </tr>
+                        </tbody>
                     </table>
                     <p>Pour la partie utilisation, il y a des introductions précises sur leur site internet. Nous pouvons obtenir les données en utilisant le sdk que l’entreprise nous donne.  Si nous développons avec Linux, nous utilisons la commande “make” à la racine du sdk pour la compiler.</p>
                     <img className="mediumImage" src={images.lidar.sdk} alt="sdk" />

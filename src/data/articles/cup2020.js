@@ -31,7 +31,7 @@ const article = {
         video: {
             title: 'La coupe en images',
             body: <React.Fragment>
-                <iframe title="finaleCoupe2020" src="https://www.youtube.com/embed/QOsNiM6KpSg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="finaleCoupe2020" src="https://www.youtube.com/embed/QOsNiM6KpSg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </React.Fragment>
         },
     }

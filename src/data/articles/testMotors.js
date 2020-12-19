@@ -20,75 +20,79 @@ const article = {
                <p>Nous avons trouvé des Maxon DC motor 118751 de l’ancien club robotique sur le site de Nantes. Ils ont été trouvé avec un réducteur PLG32 36:1 et des capteurs incrémentaux Faulhauber HEDL-5540. Voici leurs spécifications:</p>
                 <h4>Moteurs:</h4>
                 <table className="smallTable">
-                    <tr>
-                        <td>Nominal voltage</td>
-                        <td>18 V</td>
-                    </tr>
-                    <tr>
-                        <td>No load speed</td>
-                        <td>10200 rpm</td>
-                    </tr>
-                    <tr>
-                        <td>No load current</td>
-                        <td>53.9 mA</td>
-                    </tr>
-                    <tr>
-                        <td>Nominal speed</td>
-                        <td>8850 rpm</td>
-                    </tr>
-                    <tr>
-                        <td>Nominal torque (max. continuous torque)</td>
-                        <td>22.9 mNm</td>
-                    </tr>
-                    <tr>
-                        <td>Nominal current(max. continuous current)</td>
-                        <td>1.46 A</td>
-                    </tr>
-                    <tr>
-                        <td>Stall torque</td>
-                        <td>220 mNm</td>
-                    </tr>
-                    <tr>
-                        <td>Stall current</td>
-                        <td>13.5 A</td>
-                    </tr>
-                    <tr>
-                        <td>Max. efficiency</td>
-                        <td>83%</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Nominal voltage</td>
+                            <td>18 V</td>
+                        </tr>
+                        <tr>
+                            <td>No load speed</td>
+                            <td>10200 rpm</td>
+                        </tr>
+                        <tr>
+                            <td>No load current</td>
+                            <td>53.9 mA</td>
+                        </tr>
+                        <tr>
+                            <td>Nominal speed</td>
+                            <td>8850 rpm</td>
+                        </tr>
+                        <tr>
+                            <td>Nominal torque (max. continuous torque)</td>
+                            <td>22.9 mNm</td>
+                        </tr>
+                        <tr>
+                            <td>Nominal current(max. continuous current)</td>
+                            <td>1.46 A</td>
+                        </tr>
+                        <tr>
+                            <td>Stall torque</td>
+                            <td>220 mNm</td>
+                        </tr>
+                        <tr>
+                            <td>Stall current</td>
+                            <td>13.5 A</td>
+                        </tr>
+                        <tr>
+                            <td>Max. efficiency</td>
+                            <td>83%</td>
+                        </tr>
+                    </tbody>
                 </table>
                 <h4>Réducteurs:</h4>
                 <table className="smallTable">
-                    <tr>
-                        <td>Gear ratio</td>
-                        <td> </td>
-                        <td>36:1</td>
-                    </tr>
-                    <tr>
-                        <td>Number of stages</td>
-                        <td> </td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Nominal output torque</td>
-                        <td>Ncm</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Max. efficiency</td>
-                        <td>%</td>
-                        <td>81</td>
-                    </tr>
-                    <tr>
-                        <td>Max. axial load</td>
-                        <td>N</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>Max. radial load</td>
-                        <td>N</td>
-                        <td>100</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Gear ratio</td>
+                            <td> </td>
+                            <td>36:1</td>
+                        </tr>
+                        <tr>
+                            <td>Number of stages</td>
+                            <td> </td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Nominal output torque</td>
+                            <td>Ncm</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Max. efficiency</td>
+                            <td>%</td>
+                            <td>81</td>
+                        </tr>
+                        <tr>
+                            <td>Max. axial load</td>
+                            <td>N</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Max. radial load</td>
+                            <td>N</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
                 </table>
                 <h4>Codeurs incrémentaux:</h4>
                 <img className="bigImage" src={images.testMotors.coder} alt="coder" />

@@ -61,46 +61,48 @@ const article = {
                     </div>
                     <span>Spécifications du lidar:</span>
                     <table>
+                        <tbody>
                         <tr>
-                            <td>Operating Supply Voltage</td>
-                            <td>5V DC ±5%</td>
-                        </tr>
-                        <tr>
-                            <td>Light Source</td>
-                            <td>Semiconductor Laser Diode(λ=785nm)</td>
-                        </tr>
-                        <tr>
-                            <td>LASER safety</td>
-                            <td>IEC60825-1 Class 1</td>
-                        </tr>
-                        <tr>
-                            <td>Current consumption</td>
-                            <td>400mA or less (Rush current 1A)</td>
-                        </tr>
-                        <tr>
-                            <td>Detection distance</td>
-                            <td>120mm ~ 3,500mm</td>
-                        </tr>
-                        <tr>
-                            <td>Interface</td>
-                            <td>3.3V USART (230,400 bps) 42bytes per 6 degrees, Full Duplex option</td>
-                        </tr>
-                        <tr>
-                            <td>Ambient Light Resistance</td>
-                            <td>10,000 lux or less</td>
-                        </tr>
-                        <tr>
-                            <td>Sampling Rate</td>
-                            <td>1.8kHz</td>
-                        </tr>
-                        <tr>
-                            <td>Dimensions</td>
-                            <td>69.5(W) X 95.5(D) X 39.5(H)mm</td>
-                        </tr>
-                        <tr>
-                            <td>Mass</td>
-                            <td>Under 125g</td>
-                        </tr>
+                                <td>Operating Supply Voltage</td>
+                                <td>5V DC ±5%</td>
+                            </tr>
+                            <tr>
+                                <td>Light Source</td>
+                                <td>Semiconductor Laser Diode(λ=785nm)</td>
+                            </tr>
+                            <tr>
+                                <td>LASER safety</td>
+                                <td>IEC60825-1 Class 1</td>
+                            </tr>
+                            <tr>
+                                <td>Current consumption</td>
+                                <td>400mA or less (Rush current 1A)</td>
+                            </tr>
+                            <tr>
+                                <td>Detection distance</td>
+                                <td>120mm ~ 3,500mm</td>
+                            </tr>
+                            <tr>
+                                <td>Interface</td>
+                                <td>3.3V USART (230,400 bps) 42bytes per 6 degrees, Full Duplex option</td>
+                            </tr>
+                            <tr>
+                                <td>Ambient Light Resistance</td>
+                                <td>10,000 lux or less</td>
+                            </tr>
+                            <tr>
+                                <td>Sampling Rate</td>
+                                <td>1.8kHz</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensions</td>
+                                <td>69.5(W) X 95.5(D) X 39.5(H)mm</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>Under 125g</td>
+                            </tr>
+                        </tbody>
                     </table>
                     <h4>La simulation</h4>
                     <video controls src={videos.simu_modelisation_3D} />

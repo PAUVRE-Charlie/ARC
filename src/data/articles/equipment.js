@@ -23,31 +23,34 @@ const article = {
                         <img className="smallImage" src={images.equipment.wheels} alt="wheels" />
                     </div>
                     <table className="tableProsAndCons">
-                        <tr>
-                            <th>Roue</th>
-                            <th>+</th>
-                            <th>-</th>
-                        </tr>
-                        <tr>
-                            <td>Omni</td>
-                            <td>Plus de flexibilité dans le mouvement de la base et ses possibilités de déplacements spontanés</td>
-                            <td>
-                                <ul>
-                                    <li><span>Perte de traction  dû à la petite surface de contact des roues et donc perte de vitesse potentielle.</span></li>
-                                    <li><span>Impliquent l’installation de 4 moteurs au lieu de 2.</span></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Sumo</td>
-                            <td>Plus grande surface de contact possible, on profite au max des moteurs</td>
-                            <td>Coût élevé car souvent importées et contrainte de taille (les grandes roues sont rares)</td>
-                        </tr>
-                        <tr>
-                            <td>Pneu</td>
-                            <td>Bonne taille, matériaux durables et faible prix</td>
-                            <td> </td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <th>Roue</th>
+                                <th>+</th>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>Omni</td>
+                                <td>Plus de flexibilité dans le mouvement de la base et ses possibilités de déplacements spontanés</td>
+                                <td>
+                                    <ul>
+                                        <li><span>Perte de traction  dû à la petite surface de contact des roues et donc perte de vitesse potentielle.</span></li>
+                                        <li><span>Impliquent l’installation de 4 moteurs au lieu de 2.</span></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sumo</td>
+                                <td>Plus grande surface de contact possible, on profite au max des moteurs</td>
+                                <td>Coût élevé car souvent importées et contrainte de taille (les grandes roues sont rares)</td>
+                            </tr>
+                            <tr>
+                                <td>Pneu</td>
+                                <td>Bonne taille, matériaux durables et faible prix</td>
+                                <td> </td>
+                            </tr>
+                        </tbody>
+                        
                     </table>
                 </React.Fragment>
             )
