@@ -5,7 +5,7 @@
 }
 
 .robotName {
-    position: absolute;
+    position: fixed;
     bottom: 0vh;
     right: -8vw;
     padding-top: 20vh;
