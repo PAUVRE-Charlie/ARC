@@ -7,7 +7,8 @@
 
 /* Packages */
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Link as LinkScroll } from 'react-scroll';
+import { useEffect, useState } from 'react';
 
 /* Styles */
 import './styles.css';
@@ -18,10 +19,13 @@ import ScrollToTop from '../../components/ScrollToTop';
 
 /* Data */
 import colors from '../../data/colors';
+import icons from '../../data/icons';
 import articles from '../../data/articles';
 import navigation from '../../data/navigation';
 
 export default function ArticlesPage({match}) {
+
+    const [containerHeight, setHeight] = useState(0);
 
     useEffect(
 		() => {
@@ -33,7 +37,9 @@ export default function ArticlesPage({match}) {
 					obj.classList.add('fadeAndMoveFromBelow');
                 }, timer);
                 timer += 100;
-			});
+            });
+            const container = document.querySelector(".articlesPageContainer");
+            setHeight(container.offsetHeight);
 		},
 		[ match ]
 	);
@@ -64,6 +70,15 @@ export default function ArticlesPage({match}) {
                         return <ArticleCard key={article.id} article={article} />
                     })}
                 </div>
+
+                {/* Arrow to go back at the top of the page */}
+                { containerHeight > window.innerHeight*1.5 && (
+                    <LinkScroll to="headerContainer" className="arrowUpContainer">
+                        <img className="arrowUp" src={icons.arrow_up} alt="arrow_up"/>
+                    </LinkScroll>
+                )}
+
+
             </div>
         </ScrollToTop>
     )

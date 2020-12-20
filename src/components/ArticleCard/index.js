@@ -16,13 +16,11 @@ import colors from '../../data/colors'
 
 export default function ArticleCard({ article }) {
     return (
-        <Link to={process.env.PUBLIC_URL + '/articles/' + article.category + '/' + article.id} style={{color: colors.darkBlue, margin: '1rem'}}>
-            <div className="articleCardContainer">
-                {/* Title */}
-                <div className="titleCard">{article.title}</div>
-                {/* Preview */}
-                <div className="previewCard">{article.preview}</div>
-            </div>
+        <Link className="articleCardContainer" to={process.env.PUBLIC_URL + '/articles/' + article.category + '/' + article.id} style={{color: colors.darkBlue}}> 
+            {/* Title */}
+            <div className="titleCard">{article.title}</div>
+            {/* Preview */}
+            <div className="previewCard">{article.preview}</div>
         </Link>
     )
 }

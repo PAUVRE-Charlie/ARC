@@ -15,6 +15,7 @@ import './styles.css';
 
 /* Data */
 import colors from '../../data/colors';
+import icons from '../../data/icons';
 import articles from '../../data/articles';
 import navigation from '../../data/navigation';
 
@@ -93,6 +94,9 @@ export default function ArticlesPage({match}) {
                     </div>
                 </div>
             }
+            <LinkScroll to="headerContainer" className="arrowUpContainer">
+                <img className="arrowUp" src={icons.arrow_up} alt="arrow_up"/>
+            </LinkScroll>
         </div>
     )
 }

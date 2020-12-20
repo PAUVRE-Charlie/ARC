@@ -23,6 +23,13 @@
     align-items: center;
 }
 
+.arrowUpContainer{
+    width: 80%;
+    margin-left: 20%;
+    display: grid;
+    place-items: center;
+}
+
 @media screen and (max-width: 600px) {
 
     .articlesPageContainer .sideTextItem {
@@ -33,6 +40,11 @@
         width: 100%;
         left: 0%;
         transform: translateX(0%);
+    }
+
+    .arrowUpContainer{
+        width: 100%;
+        margin-left: 0;
     }
   
   }

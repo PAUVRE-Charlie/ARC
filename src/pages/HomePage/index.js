@@ -16,6 +16,7 @@ import ScrollToTop from '../../components/ScrollToTop';
 /* Data */
 import colors from '../../data/colors';
 import images from '../../data/images';
+import icons from '../../data/icons';
 import navigation from '../../data/navigation';
 
 export default function HomePage() {
@@ -55,13 +56,14 @@ export default function HomePage() {
                     C<span>lub</span>
                 </div>
                 {/* Robot name */}
-                <div className="robotName" style={{color: colors.darkBlue}}><div>PoulpyBot</div></div>
+                <div className="robotName" style={{color: colors.darkBlue}}>PoulpyBot</div>
                 
                 {/* Logo */}
                 <img className="clubLogo" src={images.logo654} alt="logo"/>
 
                 {/* Categories */}
                 <div className="categories">
+                    <img className="arrowBottom" src={icons.arrow_bottom} alt="arrow_bottom"/>
                     <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.robot.link} className="categoryItem" style={{color: colors.white, transform: 'rotate(15deg)'}}>
                         Robot
                     </Link>

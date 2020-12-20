@@ -38,13 +38,57 @@ a {
   white-space: nowrap;
 }
 
+.arrowBottom {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 10vh;
+  animation: animationArrowBottom infinite 5s;
+}
+
+
+.arrowUp {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 10vh;
+  animation: animationArrowUp infinite 5s;
+}
+
+
 /* this class is used to animate the box container when it appears on the screen */
 .fadeAndMoveFromBelow {
 	transform: translateY(0);
 	opacity: 1;
 }
 
+@keyframes animationArrowBottom {
+	0% {
+		transform: translateY(0) scale(1);
+	}
+	25% {
+		transform: translateY(10px) scale(0.8);
+	}
+	50% {
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes animationArrowUp{
+	0% {
+		transform: translateY(0) scale(1);
+	}
+	25% {
+		transform: translateY(-10px) scale(1);
+	}
+	50% {
+		transform: translateY(0) scale(1);
+	}
+}
+
 @media screen and (max-width: 800px) {
+
+  .sideTextItem {
+    position: absolute
+  }
 
   .sideTextItem span {
       display: none;
