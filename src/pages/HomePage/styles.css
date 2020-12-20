@@ -1,16 +1,16 @@
 .homePageContainer {
-    height: 100vh;
     width: 100%;
     overflow-y: hidden;
 }
 
 .robotName {
-    position: fixed;
-    bottom: 0vh;
-    right: -8vw;
+    position: absolute;
+    bottom: -10vh;
+    right: 0;
     padding-top: 20vh;
+    padding-bottom: 20vh;
     z-index: 2;
-    font-size: 20vw;
+    font-size: 15vw;
     font-weight: bold;
     transition: all 0.5s;
     overflow: hidden;
@@ -24,10 +24,31 @@
     position: absolute;
     height: 50vh;
     left:55%;
-    bottom: 45%;
+    bottom: 50%;
     z-index: 3;
     transform: translate(-50% ,50%);
     transition: all 1s;
+}
+
+.categories {
+    margin: 120vh 0 20vh 20%;
+    padding: 0;
+    width: 80%;
+    display: grid;
+    place-items: center;
+}
+
+.categoryItem {
+    font-size: 20vh;
+    font-weight: bold;
+    line-height: 100%;
+    margin: 5vh;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.categoryItem:hover {
+    filter: opacity(50%);
 }
 
 @media screen and (max-width: 800px) {

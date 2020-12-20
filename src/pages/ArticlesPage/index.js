@@ -14,6 +14,7 @@ import './styles.css';
 
 /* Components */
 import ArticleCard from '../../components/ArticleCard';
+import ScrollToTop from '../../components/ScrollToTop';
 
 /* Data */
 import colors from '../../data/colors';
@@ -38,32 +39,32 @@ export default function ArticlesPage({match}) {
 	);
 
     return (
-        <div className="articlesPageContainer">
-            {/* Categories */}
-            <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.robot.link}>
-                <div className="sideTextItem" style={{top: '5%', color: colors.white, opacity: match.params.category === navigation.robot.link ? "100%":'50%'}}>
-                    R<span style={{fontSize: match.params.category === navigation.robot.link ? '50px':'0'}}>obot</span>
-                </div>
-            </Link>
-            <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.coupe.link}>
-                <div className="sideTextItem" style={{top: '35%', color: colors.darkBlue, opacity: match.params.category === navigation.coupe.link ? "100%":'50%'}}>
-                    C<span style={{fontSize: match.params.category === navigation.coupe.link ? '50px':'0'}}>oupe</span>
-                </div>
-            </Link>
-            <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.club.link}>
-                <div className="sideTextItem" style={{top: '65%', color: colors.accent, opacity: match.params.category === navigation.club.link ? "100%":'50%'}}>
-                    C<span style={{fontSize: match.params.category === navigation.club.link ? '100px':'0'}}>lub</span>
-                </div>
-            </Link>
+        <ScrollToTop>
+            <div className="articlesPageContainer">
+                {/* Categories */}
+                <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.robot.link}>
+                    <div className="sideTextItem" style={{top: '5%', color: colors.white, opacity: match.params.category === navigation.robot.link ? "100%":'50%'}}>
+                        R<span style={{fontSize: match.params.category === navigation.robot.link ? '50px':'0'}}>obot</span>
+                    </div>
+                </Link>
+                <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.coupe.link}>
+                    <div className="sideTextItem" style={{top: '35%', color: colors.darkBlue, opacity: match.params.category === navigation.coupe.link ? "100%":'50%'}}>
+                        C<span style={{fontSize: match.params.category === navigation.coupe.link ? '50px':'0'}}>oupe</span>
+                    </div>
+                </Link>
+                <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.club.link}>
+                    <div className="sideTextItem" style={{top: '65%', color: colors.accent, opacity: match.params.category === navigation.club.link ? "100%":'50%'}}>
+                        C<span style={{fontSize: match.params.category === navigation.club.link ? '100px':'0'}}>lub</span>
+                    </div>
+                </Link>
 
-            {/* Articles */}
-            <div className="articlesContainer">
-                { articles && articles.filter(article => article.category === match.params.category).map(article => {
-                    return <ArticleCard key={article.id} article={article} />
-                })}
+                {/* Articles */}
+                <div className="articlesContainer">
+                    { articles && articles.filter(article => article.category === match.params.category).map(article => {
+                        return <ArticleCard key={article.id} article={article} />
+                    })}
+                </div>
             </div>
-
-
-        </div>
+        </ScrollToTop>
     )
 }
