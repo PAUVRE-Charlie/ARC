@@ -14,8 +14,8 @@ import { useEffect, useState } from 'react';
 import '../styles/css/articlesPage.css'
 
 /* Components */
-import ArticleCard from '../components/articleCard.js';
-import ScrollToTop from '../components/scrollToTop.js';
+import ArticleCard from '../components/articleCard';
+import ScrollToTop from '../components/scrollToTop';
 
 /* Data */
 import colors from '../data/colors';
