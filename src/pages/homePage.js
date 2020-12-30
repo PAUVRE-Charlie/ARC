@@ -8,16 +8,16 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 /* Styles */
-import './styles.css'
+import '../styles/css/homePage.css'
 
 /* Components */
-import ScrollToTop from '../../components/ScrollToTop';
+import ScrollToTop from '../components/scrollToTop';
 
 /* Data */
-import colors from '../../data/colors';
-import images from '../../data/images';
-import icons from '../../data/icons';
-import navigation from '../../data/navigation';
+import colors from '../data/colors';
+import images from '../data/images';
+import icons from '../data/icons';
+import navigation from '../data/navigation';
 
 export default function HomePage() {
 

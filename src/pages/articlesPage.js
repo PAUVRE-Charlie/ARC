@@ -11,17 +11,17 @@ import { Link as LinkScroll } from 'react-scroll';
 import { useEffect, useState } from 'react';
 
 /* Styles */
-import './styles.css';
+import '../styles/css/articlesPage.css'
 
 /* Components */
-import ArticleCard from '../../components/ArticleCard';
-import ScrollToTop from '../../components/ScrollToTop';
+import ArticleCard from '../components/articleCard';
+import ScrollToTop from '../components/scrollToTop';
 
 /* Data */
-import colors from '../../data/colors';
-import icons from '../../data/icons';
-import articles from '../../data/articles';
-import navigation from '../../data/navigation';
+import colors from '../data/colors';
+import icons from '../data/icons';
+import articles from '../data/articles';
+import navigation from '../data/navigation';
 
 export default function ArticlesPage({match}) {
 

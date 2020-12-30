@@ -11,13 +11,13 @@ import { Link as LinkScroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
 /* Styles */
-import './styles.css';
+import '../styles/css/articlePage.css'
 
 /* Data */
-import colors from '../../data/colors';
-import icons from '../../data/icons';
-import articles from '../../data/articles';
-import navigation from '../../data/navigation';
+import colors from '../data/colors';
+import icons from '../data/icons';
+import articles from '../data/articles';
+import navigation from '../data/navigation';
 
 export default function ArticlesPage({match}) {
 

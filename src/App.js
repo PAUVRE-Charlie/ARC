@@ -8,21 +8,18 @@
 // the Switch/Redirect couple is used to redirect any user to a certain page when the path doesn't match any route
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 
-/* Styles */
-import './styles.css'
-
 /* Pages */
 // the home page of the website
-import HomePage from '../pages/HomePage'
-import ArticlesPage from '../pages/ArticlesPage'
-import ArticlePage from '../pages/ArticlePage'
+import HomePage from './pages/homePage'
+import ArticlesPage from './pages/articlesPage'
+import ArticlePage from './pages/articlePage'
 
 /* Components */
 // the header component
-import Header from '../components/Header'
+import Header from './components/header'
 
 /* Data */
-import colors from '../data/colors'
+import colors from './data/colors'
 
 export default function App() {
   return (

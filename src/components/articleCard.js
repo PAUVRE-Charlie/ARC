@@ -9,10 +9,10 @@
 import { Link } from 'react-router-dom';
 
 /* Styles */
-import './styles.css'
+import '../styles/css/articleCard.css'
 
 /* Data */
-import colors from '../../data/colors'
+import colors from '../data/colors'
 
 export default function ArticleCard({ article }) {
     return (

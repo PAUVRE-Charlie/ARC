@@ -9,12 +9,12 @@
 import { Link } from 'react-router-dom';
 
 /* Styles */
-import './styles.css'
+import '../styles/css/header.css'
 
 /* Data */
-import socialMedia from '../../data/socialMedia';
-import navigation from '../../data/navigation';
-import colors from '../../data/colors';
+import socialMedia from '../data/socialMedia';
+import navigation from '../data/navigation';
+import colors from '../data/colors';
 
 export default function Header() {
     return (
