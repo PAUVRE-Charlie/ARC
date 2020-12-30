@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import '../styles/css/homePage.css'
 
 /* Components */
-import ScrollToTop from '../components/scrollToTop';
+import ScrollToTop from '../components/scrollToTop.js';
 
 /* Data */
 import colors from '../data/colors';
