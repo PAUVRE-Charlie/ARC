@@ -60,7 +60,7 @@ export default function ArticlesPage({match}) {
                 </Link>
                 <Link to={process.env.PUBLIC_URL + '/articles/' + navigation.club.link}>
                     <div className="sideTextItem" style={{top: '65%', color: colors.accent, opacity: match.params.category === navigation.club.link ? "100%":'50%'}}>
-                        C<span style={{fontSize: match.params.category === navigation.club.link ? '100px':'0'}}>lub</span>
+                        C<span style={{fontSize: match.params.category === navigation.club.link ? '50px':'0'}}>lub</span>
                     </div>
                 </Link>
 
